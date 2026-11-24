@@ -1,0 +1,147 @@
+[gd_scene format=3 uid="uid://px42q0fj2rsu"]
+
+[ext_resource type="Script" uid="uid://b63akih6jsx0l" path="res://scripts/dress_up_page.gd" id="1_fjtkl"]
+[ext_resource type="Texture2D" uid="uid://ddghnxoa6y0mp" path="res://assets/backgrounds/Background dress up.png" id="2_5ip37"]
+[ext_resource type="Texture2D" uid="uid://pa8c4706kvmh" path="res://assets/outfits/Top/Top.png" id="3_ph3hj"]
+[ext_resource type="Texture2D" uid="uid://dhu4v5euqvt4d" path="res://assets/characters/Alya/Base chibi Alya.png" id="4_mkbat"]
+[ext_resource type="Texture2D" uid="uid://bmoxhpya0xu4v" path="res://assets/outfits/Bottom/Blue skirt.png" id="5_ffve5"]
+[ext_resource type="Texture2D" uid="uid://ch2q3otfw0jeh" path="res://assets/outfits/Top/Kebaya top.png" id="6_37q3d"]
+[ext_resource type="Texture2D" uid="uid://berxu7s2gaynr" path="res://assets/outfits/Outer/Outer.png" id="7_ve3ki"]
+[ext_resource type="Texture2D" uid="uid://crhlunhj8qj7j" path="res://assets/outfits/Bottom/Skirt.png" id="8_qdqap"]
+[ext_resource type="Texture2D" uid="uid://do8s8yyfrvv2p" path="res://assets/outfits/Bottom/Green skirt.png" id="9_e4eat"]
+[ext_resource type="Texture2D" uid="uid://q2cu26ewv3y0" path="res://assets/outfits/Accessories/Bow access.png" id="10_x7luq"]
+[ext_resource type="Texture2D" uid="uid://c51ipa7p3fl5i" path="res://assets/outfits/Accessories/White shoes.png" id="11_c7t84"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_c8c4f"]
+color = Color(0.9647059, 0.8509804, 0.78431374, 1)
+
+[node name="DressUpPage" type="Control" unique_id=1202560459]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fjtkl")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1685450872]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("2_5ip37")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="WardrobePanel" type="PanelContainer" parent="." unique_id=1466238163]
+layout_mode = 1
+offset_left = 810.0
+offset_top = 50.0
+offset_right = 1240.0
+offset_bottom = 650.0
+theme_override_styles/panel = SubResource("StyleBoxLine_c8c4f")
+
+[node name="WardrobeContent" type="VBoxContainer" parent="WardrobePanel" unique_id=763968984]
+layout_mode = 2
+
+[node name="WardrobeLayout" type="VBoxContainer" parent="WardrobePanel/WardrobeContent" unique_id=292975956]
+layout_mode = 2
+
+[node name="WardrobeTitle" type="Label" parent="WardrobePanel/WardrobeContent/WardrobeLayout" unique_id=795477027]
+layout_mode = 2
+text = "WARDROBE"
+
+[node name="CategoryTabs" type="HBoxContainer" parent="WardrobePanel/WardrobeContent/WardrobeLayout" unique_id=1884951502]
+layout_mode = 2
+
+[node name="TopsButton" type="Button" parent="WardrobePanel/WardrobeContent/WardrobeLayout/CategoryTabs" unique_id=1682593912]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Tops"
+
+[node name="BottomsButton" type="Button" parent="WardrobePanel/WardrobeContent/WardrobeLayout/CategoryTabs" unique_id=885679768]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Bottoms"
+
+[node name="OutersButton" type="Button" parent="WardrobePanel/WardrobeContent/WardrobeLayout/CategoryTabs" unique_id=1751703829]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Outers"
+
+[node name="AccessoriesButton" type="Button" parent="WardrobePanel/WardrobeContent/WardrobeLayout/CategoryTabs" unique_id=390736932]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Accessories"
+
+[node name="ItemScroll" type="ScrollContainer" parent="WardrobePanel/WardrobeContent/WardrobeLayout" unique_id=186920761]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ItemGrid" type="GridContainer" parent="WardrobePanel/WardrobeContent/WardrobeLayout/ItemScroll" unique_id=2052017959]
+layout_mode = 2
+columns = 2
+
+[node name="TopItem1" type="TextureRect" parent="WardrobePanel/WardrobeContent/WardrobeLayout/ItemScroll/ItemGrid" unique_id=1990442601]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_ph3hj")
+expand_mode = 1
+
+[node name="TopItem2" type="TextureRect" parent="WardrobePanel/WardrobeContent/WardrobeLayout/ItemScroll/ItemGrid" unique_id=1861669703]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_ph3hj")
+expand_mode = 1
+
+[node name="CharacterPreview" type="Node2D" parent="." unique_id=678632084]
+
+[node name="BaseCharacter" type="Sprite2D" parent="CharacterPreview" unique_id=1194493049]
+position = Vector2(432, 357.00003)
+scale = Vector2(0.2141927, 0.21419272)
+texture = ExtResource("4_mkbat")
+
+[node name="Accessories shoes" type="Sprite2D" parent="CharacterPreview/BaseCharacter" unique_id=1020250680]
+position = Vector2(-4.668701, -14.006226)
+scale = Vector2(0.99734044, 0.99734056)
+texture = ExtResource("11_c7t84")
+
+[node name="Bottom blue skirt" type="Sprite2D" parent="CharacterPreview" unique_id=652332554]
+position = Vector2(432, 356)
+scale = Vector2(0.20273845, 0.20273846)
+texture = ExtResource("5_ffve5")
+
+[node name="Top" type="Sprite2D" parent="CharacterPreview" unique_id=528755752]
+position = Vector2(408, 363)
+scale = Vector2(0.20454922, 0.2033692)
+texture = ExtResource("3_ph3hj")
+
+[node name="Kebaya top" type="Sprite2D" parent="CharacterPreview" unique_id=160174788]
+visible = false
+position = Vector2(430.99997, 355.00003)
+scale = Vector2(0.20088705, 0.19344077)
+texture = ExtResource("6_37q3d")
+
+[node name="Outer" type="Sprite2D" parent="CharacterPreview" unique_id=431571313]
+position = Vector2(428, 358)
+scale = Vector2(0.21407065, 0.21407066)
+texture = ExtResource("7_ve3ki")
+
+[node name="Bottom pink skirt" type="Sprite2D" parent="CharacterPreview" unique_id=988364866]
+position = Vector2(432.99997, 364.99997)
+scale = Vector2(0.2122396, 0.2122396)
+texture = ExtResource("8_qdqap")
+
+[node name="Bottom green skirt" type="Sprite2D" parent="CharacterPreview" unique_id=582635561]
+visible = false
+position = Vector2(431, 354.00003)
+scale = Vector2(0.20491537, 0.20491537)
+texture = ExtResource("9_e4eat")
+
+[node name="Accessories bow" type="Sprite2D" parent="CharacterPreview" unique_id=1813077423]
+position = Vector2(436, 379)
+scale = Vector2(0.24202478, 0.24202478)
+texture = ExtResource("10_x7luq")
