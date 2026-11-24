@@ -514,6 +514,8 @@ func _get_or_create_outfit_sprite(category_id: String, item_path: String) -> Spr
 				var slot_cfg: Dictionary = CONFIG["accessory_slots"][slot_type]
 				if not bool(slot_cfg.get("under_clothes", false)):
 					preset.z_index = int(slot_cfg["z_index"])
+		else:
+			preset.z_index = int(category_cfg["z_index"])
 		return preset
 
 	if _dynamic_sprites.has(item_path):
