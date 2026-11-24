@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c51ipa7p3fl5i"
-path="res://.godot/imported/White shoes.png-94d068c042e40e8815fa630a8545e7ed.ctex"
+uid="uid://bpp6hjwpu0eg7"
+path="res://.godot/imported/shoes_white.png-1c33b0eb4a4c92b979ba2cb7e428e6ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/outfits/Accessories/White shoes.png"
-dest_files=["res://.godot/imported/White shoes.png-94d068c042e40e8815fa630a8545e7ed.ctex"]
+source_file="res://assets/outfits/Accessories/shoes_white.png"
+dest_files=["res://.godot/imported/shoes_white.png-1c33b0eb4a4c92b979ba2cb7e428e6ba.ctex"]
 
 [params]
 

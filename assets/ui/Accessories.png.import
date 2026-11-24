@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q2cu26ewv3y0"
-path="res://.godot/imported/Bow access.png-b82fd9b177b031c044449bddfc128add.ctex"
+uid="uid://dt3twhbqdl88j"
+path="res://.godot/imported/Accessories.png-d343d504f0ca55c1dc9e5fa71d6e3f34.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/outfits/Accessories/Bow access.png"
-dest_files=["res://.godot/imported/Bow access.png-b82fd9b177b031c044449bddfc128add.ctex"]
+source_file="res://assets/ui/Accessories.png"
+dest_files=["res://.godot/imported/Accessories.png-d343d504f0ca55c1dc9e5fa71d6e3f34.ctex"]
 
 [params]
 
